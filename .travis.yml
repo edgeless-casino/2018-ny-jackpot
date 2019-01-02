@@ -1,0 +1,18 @@
+cache:
+  yarn: true
+language: node_js
+node_js:
+  - 8.9.4
+script:
+  - yarn install
+  - yarn test
+  - yarn build
+  - yarn export
+deploy:
+  provider: pages
+  local-dir: out
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master

@@ -1,0 +1,24 @@
+{
+  "name": "2018-ny-jackpot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Rytis Grincevicius",
+    "email": "rytis.grincevicius@gmail.com",
+    "url": "https://github.com/grinry"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "test": "echo 'There is not tests!'"
+  },
+  "dependencies": {
+    "mersennetwister": "^0.2.3",
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
