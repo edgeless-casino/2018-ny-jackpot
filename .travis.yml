@@ -8,7 +8,6 @@ env:
     NODE_ENV=production
 script:
   - yarn install
-  - yarn test
   - yarn build
   - yarn export
   - touch out/.nojekyll
