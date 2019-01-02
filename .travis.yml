@@ -3,11 +3,15 @@ cache:
 language: node_js
 node_js:
   - 8.9.4
+env:
+  global:
+    NODE_ENV=production
 script:
   - yarn install
   - yarn test
-  - NODE_ENV="production" yarn build
-  - NODE_ENV="production" yarn export
+  - yarn build
+  - yarn export
+  - touch out/.nojekyll
 deploy:
   provider: pages
   local-dir: out
