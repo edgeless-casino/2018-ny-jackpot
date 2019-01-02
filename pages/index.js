@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getWinningKey, keysLenght } from '../rng.service';
+import { getWinningKey, keysLength } from '../rng.service';
 
 class Index extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class Index extends Component {
     this.state = {
       serverSeed: '0x040c6d229d7b1e14b13c17a23aa4e33bdd28a81f',
       clientSeed: '0x7091778a4871f92ce0a39d1c4135a550462b63b66d5fb39f3aca80a1831a1385',
-      keyCount: keysLenght,
+      keyCount: keysLength,
       serialNumber: null,
       uniqueKeyId: null,
       createdAt: null,

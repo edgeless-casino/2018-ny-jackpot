@@ -13,12 +13,22 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "test": "echo 'There is not tests!'"
+    "test": "jest"
   },
   "dependencies": {
     "mersennetwister": "^0.2.3",
     "next": "^7.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.7.0"
   }
 }

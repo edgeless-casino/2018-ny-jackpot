@@ -31,8 +31,8 @@ exports.getKeySerialNumber = (clientSeed, serverSeed, keyCount) => {
  * @returns {{serialNumber: number}, {uniqueKeyId: string, createdAt: Date}}
  */
 exports.getWinningKey = (clientSeed, serverSeed, keyCount) => {
-  const keyNumber = this.getKeySerialNumber(clientSeed, serverSeed, keyCount);
+  const keyNumber = exports.getKeySerialNumber(clientSeed, serverSeed, keyCount);
   return keys[keyNumber];
 };
 
-exports.keysLenght = keys.length;
+exports.keysLength = keys.length;
