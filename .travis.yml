@@ -6,8 +6,8 @@ node_js:
 script:
   - yarn install
   - yarn test
-  - yarn build
-  - yarn export
+  - NODE_ENV="production" yarn build
+  - NODE_ENV="production" yarn export
 deploy:
   provider: pages
   local-dir: out
