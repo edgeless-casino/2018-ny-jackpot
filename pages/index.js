@@ -35,7 +35,7 @@ class Index extends Component {
   }
 
   getKey() {
-    const winningKey = getWinningKey(this.state.clientSeed, this.state.serverSeed, this.state.keyCount);
+    const winningKey = getWinningKey(this.state.clientSeed, this.state.serverSeed, Number(this.state.keyCount));
     this.setState({
       serialNumber: winningKey.serialNumber,
       uniqueKeyId: winningKey.uniqueKeyId,

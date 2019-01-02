@@ -3,9 +3,9 @@ const keys = require('./list-of-keys');
 
 /**
  * Generates random number which will be used as index for finding winning key.
- * @param clientSeed
- * @param serverSeed
- * @param keyCount
+ * @param {string} clientSeed
+ * @param {string} serverSeed
+ * @param {number} keyCount
  * @returns {number}
  */
 exports.getKeySerialNumber = (clientSeed, serverSeed, keyCount) => {
@@ -25,10 +25,10 @@ exports.getKeySerialNumber = (clientSeed, serverSeed, keyCount) => {
 
 /**
  * Returns winning key object.
- * @param clientSeed
- * @param serverSeed
- * @param keyCount
- * @returns {*}
+ * @param {string} clientSeed
+ * @param {string} serverSeed
+ * @param {number} keyCount
+ * @returns {{serialNumber: number}, {uniqueKeyId: string, createdAt: Date}}
  */
 exports.getWinningKey = (clientSeed, serverSeed, keyCount) => {
   const keyNumber = this.getKeySerialNumber(clientSeed, serverSeed, keyCount);
