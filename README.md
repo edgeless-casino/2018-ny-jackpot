@@ -1,4 +1,5 @@
 # 2018 NY Jackpot fairness
+[![Build Status](https://travis-ci.org/edgeless-casino/2018-ny-jackpot.svg?branch=master)](https://travis-ci.org/edgeless-casino/2018-ny-jackpot)
 
 Here you can check fairness of edgeless jackpot winner.
 

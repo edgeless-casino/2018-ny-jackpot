@@ -19,9 +19,7 @@
     "mersennetwister": "^0.2.3",
     "next": "^7.0.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  },
-  "devDependencies": {
+    "react-dom": "^16.7.0",
     "@babel/core": "^7.1.2",
     "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.6.0",
