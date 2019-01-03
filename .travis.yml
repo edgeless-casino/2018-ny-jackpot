@@ -5,7 +5,7 @@ env:
   global:
     NODE_ENV=production
 install:
-  -yarn global add codecov
+  - yarn global add codecov
 script:
   - yarn install
   - yarn test
