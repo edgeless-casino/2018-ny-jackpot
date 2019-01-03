@@ -13,7 +13,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "test": "jest --no-cache"
+    "test": "jest --no-cache --coverage"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
