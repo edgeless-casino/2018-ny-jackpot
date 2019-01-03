@@ -1,17 +1,18 @@
-cache:
-  yarn: true
 language: node_js
 node_js:
   - 8.9.4
 env:
   global:
     NODE_ENV=production
+install:
+  -yarn global add codecov
 script:
   - yarn install
   - yarn test
   - yarn build
   - yarn export
   - touch out/.nojekyll
+  - codecov
 deploy:
   provider: pages
   local-dir: out
