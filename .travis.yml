@@ -3,7 +3,10 @@ cache:
 language: node_js
 node_js:
   - 8.9.4
-install:
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
   - yarn global add codecov
 script:
   - yarn install
@@ -12,6 +15,8 @@ script:
   - NODE_ENV=production yarn export
   - touch out/.nojekyll
   - codecov
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
   provider: pages
   local-dir: out
