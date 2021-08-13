@@ -23,7 +23,7 @@
     "enzyme-adapter-react-16": "^1.7.1",
     "jest": "^23.6.0",
     "mersennetwister": "^0.2.3",
-    "next": "^7.0.2",
+    "next": "^11.1.0",
     "react": "^16.7.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.7.0",
